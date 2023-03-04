@@ -12,7 +12,7 @@
 
     --Facebook: hsl(208, 92%, 53%);
     --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --YouTube: hsl(348, 97%, 39%);
 
     --ToggleDark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
@@ -40,8 +40,8 @@ main{
     background: linear-gradient(
     to bottom,
     hsl(232, 19%, 15%) 0%,
-    hsl(232, 19%, 15%) 30vh,
-    hsl(230, 17%, 14%) 30vh,
+    hsl(232, 19%, 15%) 35vh,
+    hsl(230, 17%, 14%) 35vh,
     hsl(230, 17%, 14%) 100vh
   );
 }
@@ -53,7 +53,7 @@ main{
 }
 
 .social-media{
-    padding: 4vh 10vw;
+    padding: 5vh 10vw;
 }
 
 .social-media-dashboard{
@@ -72,6 +72,7 @@ main{
 .total-followers{
     font-size: 13px;
     color: var(--DesaturatedBlue);
+    font-weight: 800;
 }
 
 .toggle{
@@ -151,4 +152,94 @@ main{
     border-radius: 50%;
   }
 
-  
+  /* social media apps */
+
+  .social-media-apps{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+.app-div{
+  width: 23.5%;
+}  
+  .background{
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border: none;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .app{
+    background: var(--DarkDesaturatedBlue);
+    padding: 20px 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .app:hover{
+    transition: 1s;
+    cursor: pointer;
+    background: #333a56;
+  }
+
+  .logo-name{
+    display: flex;
+    color: var(--DesaturatedBlue);
+    font-size: 12px;
+    align-items: center;
+    font-weight: 800;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    gap: 5px;
+  }
+
+  .followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .number{
+    font-size: 45px;
+    line-height: 55px;
+    color: white;
+    font-weight: 800;
+  }
+
+  .follower{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--DesaturatedBlue);
+    text-transform: uppercase;
+  }
+
+  .increase{
+    color: var(--LimeGreen);
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+
+  .increase-arrow{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow{
+    margin-bottom: 7px;
+  }
+
+
