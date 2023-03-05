@@ -1,0 +1,99 @@
+@media(min-width: 767px) and (max-width: 1024px){
+    .social-media{
+        padding: 3vh 3vw;
+    }
+    
+      /* social media apps */
+    
+      .social-media-apps{
+        justify-content: center;
+      }
+    
+    .app-div{
+      width: 48%;
+    }  
+
+    
+      .logo-name{
+        margin-bottom: 25px;
+        margin-top: 10px;
+      }
+    
+      .followers{
+        gap: 7px;
+      }
+    
+      .number{
+        font-size: 42px;
+        line-height: 52px;
+      }
+    
+    /* overwiew */
+    
+    .overview{
+      padding: 3vh 3vw;
+    }
+    
+    .details-today{
+        width: 48%;
+    }
+    
+}
+
+@media(max-width:767px){
+    
+    .social-media{
+        padding: 5vh 7vw;
+    }
+    
+    .social-media-dashboard{
+        align-items: start;
+        
+        flex-direction: column;
+    }
+
+    .hidden{
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        border: 1px solid hsl(228, 34%, 66%);
+    }
+    
+    .dashboard{
+        align-items: start;
+        color: white;
+        gap: 7px;
+    }
+    
+    
+    .toggle{
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 5px;
+    }
+      /* social media apps */
+    
+      .social-media-apps{
+        margin-top: 2rem;
+      }
+    
+    .app-div{
+      width: 100%;
+    }  
+    
+    /* overwiew */
+    
+    .overview{
+      display: flex;
+      flex-direction: column;
+      padding: 2vh 7vw;
+    }
+    
+    .details-today{
+        width: 100%;
+    }
+    
+    .whole-details{
+      gap: 8px;
+    }
+}

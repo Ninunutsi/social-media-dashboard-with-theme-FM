@@ -52,4 +52,50 @@ for(let i = 0; i <= 3; i++){
     }
 }
 
+let check = document.getElementById('checkbox')
+let mainElem = document.getElementById('main')
+let mode = document.getElementById('mode')
+let dashboard = document.getElementById('social-media-dashboard')
+let lightNum = document.getElementsByClassName('light-num')
+let lightBg = document.getElementsByClassName('bg-light')
+let overview = document.getElementById('overview')
 
+function changeNumColorToLight(){
+    for(let i = 0; i< 12; i++){
+        lightNum[i].style.color = 'hsl(230, 17%, 14%)'
+    }
+}
+
+function changeNumColorToDark(){
+    for(let i = 0; i< 12; i++){
+        lightNum[i].style.color = 'white'
+    }
+}
+
+function changeBgToLight(){
+    for(let i = 0; i < lightBg.length; i++){
+        lightBg[i].style.background = 'hsl(227, 47%, 96%)'
+    }
+}
+
+function changeBgToDark(){
+    for(let i = 0; i < lightBg.length; i++){
+        lightBg[i].style.background = 'hsl(228, 28%, 20%)'
+    }
+}
+
+let flag = true
+let slider = document.getElementById('slider')
+
+check.addEventListener('click', () => {
+    mode.style.color = flag ? 'hsl(230, 17%, 14%)' : 'hsl(228, 34%, 66%)'
+    mode.innerHTML = flag ? 'Light mode' : "Dark mode"
+    check.style.color = flag ? 'white' : ''
+    dashboard.style.color = flag ? 'hsl(230, 17%, 14%)' : ''
+    flag ? changeNumColorToLight() : changeNumColorToDark()
+    flag ? changeBgToLight() : changeBgToDark()
+    overview.style.color = flag ? 'hsl(228, 12%, 44%)' : ''
+    slider.style.background = flag ? 'hsl(230, 22%, 74%)' : ''
+    mainElem.style.background = flag ? 'linear-gradient(to bottom, hsl(227, 47%, 96%) 0%, hsl(227, 47%, 96%) 35vh, hsl(225, 100%, 98%) 35vh, hsl(225, 100%, 98%)' : ''
+    flag = !flag
+})

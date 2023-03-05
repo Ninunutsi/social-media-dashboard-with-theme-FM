@@ -83,7 +83,7 @@ main{
 }
 
 .mode{
-    color: white;
+    color: var(--DesaturatedBlue);
     font-weight: bolder;
     font-size: 12px;
 }
@@ -139,9 +139,9 @@ main{
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(23px);
-    -ms-transform: translateX(23px);
-    transform: translateX(23px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
   }
   
   /* Rounded sliders */
@@ -311,4 +311,12 @@ main{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.bg-light{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hidden{
+  display: none;
 }
